@@ -1,0 +1,1 @@
+{"resources":{"milrim_database/MilrimDB.sql":{"default-datasource":"oracle_thin-189530c31df-1560084ae0c7a51f","default-schema":"YSM"},"milrim_database/text.sql":{"default-schema":"YSM","default-datasource":"oracle_thin-189530c31df-1560084ae0c7a51f"}}}

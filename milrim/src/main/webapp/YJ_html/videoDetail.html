@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="project5 Milrim">
+    <meta property="og:url" content="https://mrrobotcorp.github.io/project5_Milrim/">
+    <meta property="og:image" content="https://mrrobotcorp.github.io/project5_Milrim//source/thumbnail.png">
+    <meta property="og:description" content="4조 프로젝트 사이트 - Milrim">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="project5 Milrim">
+    <meta name="twitter:url" content="https://mrrobotcorp.github.io/project5_Milrim/">
+    <meta name="twitter:image" content="https://mrrobotcorp.github.io/project5_Milrim//source/thumbnail.png">
+    <meta name="twitter:description" content="4조 프로젝트 사이트 - Milrim">
+    <meta name="description" content="4조 프로젝트 사이트 - Milrim">
+    <meta name='keywords' content='project, milrim, toy project, community, ott service'>
+
+    <link rel="icon" href="./source/favicon-32x32.png" sizes="32x32">
+    <link rel="apple-touch-icon" href="./source/apple-icon-180x180.png" sizes="180x180">
+    <title>Milrim | 밀림</title>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/plyr.css" />
+    <link rel="stylesheet" href="./css/videoDetail.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="gnb">
+                <li>
+                    <a href="#"><img class="headLogo" src="./source/logo_noBg_b.png"></a>
+                </li>
+                <li><a href="#">밀림의 숲</a></li>
+            </ul>
+            <div class="mypageAll">
+                <div class="myProfile">
+                    <img class="profImg" src="./source/none.png">
+                    <span>유저 이름</span>
+                </div>
+                <ul class="mpList">
+                    <li>
+                        <img class="profImg" src="./source/none.png">
+                        <span>유저 이름</span>
+                    </li>
+                    <li>
+                        <a href="#">프로필 관리</a>
+                    </li>
+                    <li>
+                        <a href="#">보관함</a>
+                    </li>
+                    <li>
+                        <a href="#">설정</a>
+                    </li>
+                    <li>
+                        <a href="#">로그아웃</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="playContent">
+            <video controls crossorigin playsinline
+                poster="./source/thumb08.jpg" id="player">
+                <source src="./source/Kimmel Live.mp4" 
+                type="video/mp4">
+            </video>
+        </div>
+        <div class="videoInfo inner">
+            <div class="vidTitle">
+                <span>
+                    <span class="titleSub">
+                        <p>(자막)데스노트 리마스터</p>
+                        <span class="starBtn"></span>
+                    </span>
+                    <p>1화 에피소드 제목</p>
+                </span>
+                <div>
+                    <img class="shareBtn" src="./source/shareIco.png">
+                </div>
+            </div>
+            <div class="vidBottom">
+                <p class="plot">
+                    평범한 고교생인 야가미 라이토. 그는 전국에서 알아주는 우수한 성적으로 가지고 있지만 
+                    매일 똑같은 하루에 지루함을 느끼곤 한다. 그러던 어느 날 하늘에서 검은 노트가 라이토 앞에 떨어진다. 그 노트는 사신계에서 떨어진 죽음의 노트. 그 노트에 이름이 적힌 자는 반드시 죽게 되는 노트인 데스노트였다.
+                </p>
+                <span class="tag"># 드라마</span>
+                <span class="tag"># 스릴러</span>
+            </div>
+        </div> 
+    </main>
+
+    <section class="episode inner">
+        <h3 class="blind">회차 정보</h3>
+        <h4>총 37개의 에피소드</h4>
+        <div class="epAll">
+            <div class="ep">
+                <div class="epThumb">
+                    <img src="./source/thumb03.jpg">
+                </div>
+                <span>1화 에피소드 제목</span>
+            </div>
+            <div class="ep">
+                <div class="epThumb">
+                    <img src="./source/thumb04.jpg">
+                </div>
+                <span>2화 에피소드 제목</span>
+            </div>
+            <div class="ep">
+                <div class="epThumb">
+                    <img src="./source/thumb05.png">
+                </div>
+                <span>3화 에피소드 제목</span>
+            </div>
+            <div class="ep">
+                <div class="epThumb">
+                    <img src="./source/thumb07.jpg">
+                </div>
+                <span>4화 에피소드 제목</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <img src="./source/logo_noBg.png">
+        <p>© Milrim, Inc. 2023. No more dull moments!</p>
+    </footer>
+
+    <script src="./js/header.js"></script>
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+    <script src="./js/videoDetail.js"></script>
+</body>
+
+</html>

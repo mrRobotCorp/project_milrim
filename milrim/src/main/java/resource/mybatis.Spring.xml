@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+
+<configuration>
+	<typeAliases>
+		<!-- 석민 -->
+		<typeAlias alias="member01" type="milrim_project.login.m04_vo.Member"/>
+		<typeAlias alias="freeboard01" type="milrim_project.login.m04_vo.Freeboard"/>
+		<typeAlias alias="videopost01" type="milrim_project.login.m04_vo.Videopost"/>
+		<typeAlias alias="membership01" type="milrim_project.login.m04_vo.Membership"/>
+		<!-- 영재 -->
+		<typeAlias alias="videopost" type="milrim_project.YJ.vo.VideoPost"/>
+		<typeAlias alias="bookmark" type="milrim_project.YJ.vo.BookMark"/>
+		<typeAlias alias="freeboard" type="milrim_project.YJ.vo.FreeBoard"/>
+		<typeAlias alias="comment01" type="milrim_project.YJ.vo.Comment01"/>
+		
+	</typeAliases>
+	
+	<mappers>
+		<mapper resource="resource/M01_Mapper.xml"/>
+		<mapper resource="resource/M02_MapperYJ.xml"/>
+		<mapper resource="resource/M02_MapperYJ02.xml"/>
+	</mappers>
+</configuration>

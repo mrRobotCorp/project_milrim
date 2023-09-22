@@ -1,0 +1,17 @@
+@import './reset.css';
+main { min-height: calc(100vh - 130px); display: flex; align-items: center; justify-content: center; flex-direction: column; background: url(../source/mainBg2.png) center center; background-size: cover; } 
+
+.mainComm { text-align: center; color: #fff; } 
+.mainComm .mainLogo img { width: 180px; } 
+.mainComm p { letter-spacing: 3px; } 
+
+.startBtn { display: flex; justify-content: center; align-items: center; background: var(--color-sub); margin : 20px auto; width : 330px; height : 55px; overflow: hidden; text-align : center; transition : .2s; cursor : pointer; border-radius: 6px; } 
+.btnText { width: 100%; margin-left: 90px; transition : .3s; font-family: pBold; font-size: 17px; } 
+.btnArrow { position : relative; width : 180px; height : 55px; padding-top: 35px; background : #d39d08; left : -400px; transition : .3s; } 
+.startBtn:hover .btnArrow { left: -260px; color: #fff; font-family: pSemi;} 
+.startBtn:hover .btnText { margin-left : 130px; }
+
+.regBtn { position: relative; font-size: 14px; color: #fff; letter-spacing: 1px; transition: all .2s ease;} 
+.regBtn:after { content: ''; position: absolute; bottom: -3px; left: -2px; width: 82px; height: 0.7px; background: #fff; transition: all .2s ease;} 
+.regBtn:hover { color: var(--color-sub); }
+.regBtn:hover::after { background-color: var(--color-sub); }

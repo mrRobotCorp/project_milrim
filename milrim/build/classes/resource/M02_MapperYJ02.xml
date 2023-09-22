@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >	
+		
+<mapper namespace="milrim_project.YJ.dao.A03_CommunityDao">
+	<select id="postList" resultType="freeboard">
+		SELECT TITLE, CONTENT, FBDATE, f.ID, m.NAME, f.POSTID 
+		FROM FREEBOARD f , MEMBER m 
+		WHERE f.ID = m.ID AND TITLE LIKE '%'||#{title, jdbcType=VARCHAR}||'%'
+		 ORDER BY f.FBDATE DESC
+	</select>
+	<select id="commentList" resultType="comment01">
+		SELECT m.NAME ,m.ID, CONTENT, c.CDATE,c.commentId
+		FROM COMMENT01 c, MEMBER m 
+		WHERE c.ID = m.ID AND POSTID = #{postId, jdbcType=VARCHAR}
+		ORDER BY c.CDATE DESC
+	</select>
+	<insert id="insPost">
+		INSERT INTO FREEBOARD values(TO_CHAR(postid_sq.NEXTVAL), #{title},#{content},sysdate,#{id})
+	</insert>
+	<insert id="insComment">
+		INSERT INTO COMMENT01 values(TO_CHAR(comment_sq.NEXTVAL),#{postId},#{content},sysdate,#{id})
+	</insert>
+	<delete id="delPost">
+		 DELETE FROM FREEBOARD WHERE id=#{id} AND postid=#{postId}
+	</delete>
+	<delete id="delComment">
+		 DELETE FROM COMMENT01 WHERE id=#{id} AND commentid=#{commentId}
+	 </delete>
+</mapper>

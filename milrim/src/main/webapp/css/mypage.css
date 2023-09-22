@@ -1,0 +1,458 @@
+section{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 130px);
+    background-color: #f7f7f7;
+}
+.myInner{
+    display: flex;
+    justify-content:space-between;
+    width: 1400px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.profile{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 430px;
+    background-color: white;
+    border: solid 1px #eeeeee;
+    border-radius: 3px;
+}
+.profileInner{
+    margin: 20px 0 20px 0;
+    width: 356px;
+    height: 390px;
+}
+.profileInner h3{
+    font-family: pSemi;
+    font-size: 18px;
+}
+.profileinInner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.semiInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: center;
+}
+.semiInfo img{
+    width: 103px;
+    border-radius: 100%;
+}
+.nameTag{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+.name{
+    margin-bottom: 15px;
+    font-family: pSemi;
+    font-size: 18px;
+}
+.nameTag > input{
+    padding: 5px 20px 5px 20px;
+    background-color: white;
+    border: 1px solid #bebebe;
+    border-radius: 3px;
+    font-family: pMedium;
+    font-size: 16px;
+    color: black;
+    transition: all .3s;
+    cursor: pointer;
+}
+.nameTag > input:hover{
+    background-color: #dddddd;
+    border: 1px solid #bebebe;
+}
+.textInfo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.threeInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 100px;
+}
+.threeInfo h2{
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-family: pSemi;
+}
+.threeInfo p{
+    font-size: 14px;
+    font-family: pMedium;
+}
+.myBox{
+    margin-top: 50px;
+    width: 355px;
+    height: 60px;
+    border-radius: 3px;	
+    background-color: white;
+    border: 1px solid #bebebe;
+    font-family: pSemi;
+    font-size: 18px;
+    transition: all .3s;
+    cursor: pointer;
+}
+.myBox:hover{
+    background-color: #dddddd;
+    border: 1px solid #bebebe;
+}
+
+/* --------------------옆 화면--------------------- */
+.content{
+    display: flex;
+    justify-content: center;
+    width: 960px;
+    padding-bottom: 10px;
+    background-color: white;
+    border: solid 1px #eeeeee;
+    border-radius: 3px;
+}
+.contentInner{
+    margin: 20px 0 20px 0;
+    width: 900px;
+}
+.contentInner h3{
+    font-family: pSemi;
+    font-size: 20px;
+}
+.cName{
+    display: flex;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px #bebebe;
+    font-family: pSemi;
+    font-size: 15px;
+}
+.cName button{
+    width: 20px;
+    height: 20px;
+    background: url(../source/trash.png) center center no-repeat;
+    background-size: contain;
+    background-color: white;
+    cursor: pointer;
+}
+.delete{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.delete span{
+    margin-top: 3px;
+    margin-left: 5px;
+    font-size: 15px;
+}
+.sVideo{
+    margin-top: 20px;
+    font-family: pSemi;
+    font-size: 15px;
+}
+.videoList{
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+}
+.videoInfo{
+    cursor: pointer;
+    margin-right: 29px;
+}
+.videoInfo img{
+    width: 280px;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+.videoInfo img:hover{
+    opacity: 50%;
+}
+.option{
+    display: flex;
+    margin-top: 30px;
+}
+.account{
+    width: 450px;
+}
+.account h5{
+    font-family: pRegular;
+}
+.form{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+.aPwd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 285px;
+}
+.aPwd input{
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    border: solid 1px #bebebe;
+    border-radius: 3px;
+    font-family: pMedium;
+    font-size: 13px;
+    text-align: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+.aPwd input:hover{
+    background-color: #dddddd;
+    border: 1px solid #bebebe;
+}
+.email{
+    width: 240px;
+}
+.logout input{
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    border: solid 1px #bebebe;
+    border-radius: 3px;
+    font-family: pMedium;
+    font-size: 13px;
+    text-align: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+.logout input:hover{
+    background-color: #dddddd;
+    border: 1px solid #bebebe;
+}
+.idDelete input{
+    padding: 0;
+    background-color: white;
+    font-family: pMedium;
+    font-size: 12px;
+    text-align: center;
+}
+.idDelete input:hover{
+    color: var(--color-main);
+}
+.themeSemi{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 330px;
+}
+.themeAlign{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.themeSemi p{
+    margin-top: 10px;
+    font-family: pMedium;
+    font-size: 18px;
+}
+.tLight{
+    width: 141px;
+    height: 78px;
+    background-color: white;
+    border: solid 1px #d5d5d5;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.tDark{
+    width: 141px;
+    height: 78px;
+    background-color: #363636;
+    border: solid 1px #d5d5d5;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.myGnb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    font-size: 16px;
+    font-family: pSemi;
+    color: #363636;
+    cursor: pointer;
+}
+.postInfo{
+    cursor: pointer;
+    margin-right: 8px;
+}
+.postThumb{
+    width: 200px;
+    height: 200px;
+    border: solid 1px black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+.postThumb:hover{
+    background-color: #bebebe41;
+}
+.postList{
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+}
+.showPost{
+    display: none;
+}
+/* ---------모달창-------------- */
+.modalWrap{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2727275b;
+    z-index: 1;
+    display: none;
+}
+.modal{
+    position: absolute;
+    left: 40%;
+    top: 30%;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    z-index: 2;
+    border: solid 1px #eeeeee;
+    border-radius: 3px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.23), 0px 3px 6px rgba(0,0,0,0.23);
+}
+.modalInner{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 4%;
+}
+.modalInner h2{
+    margin-bottom: 20px;
+}
+.modalInner .new{
+    width: 345px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    font-family: Psemi;
+    font-size: 15px;
+    border-bottom: solid 1px #b9b9b9;
+
+}
+.modalTop{
+    display: flex;
+    justify-content: space-between;
+}
+.mnic{
+    height: 200px;
+    display: none;
+}
+.modalBtn input{
+    margin-left: 270px;
+    width: 80px;
+    height: 40px;
+    border-radius: 3px;
+    font-size: 15px;
+    font-family: pSemi;
+    text-align: center;
+    background-color: #bde0ff;
+    transition: all .3s;
+    cursor: pointer;
+}
+.modalBtn input:hover{
+   background-color:  #92cafc;
+}
+.cencel button{
+    width: 18px;
+    height: 18px;
+    background: url(../source/m_cencel.png) center center no-repeat;
+    background-size: contain;
+    background-color: white;
+    cursor: pointer;
+}
+.mpwd{
+    display: none;
+}
+.ckLogout{
+    height: 150px;
+    display: none;
+}
+.ckLogout .modalBtn{
+    margin-top: 20px;
+}
+.ex{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 330px;
+}
+li{
+    padding-bottom: 15px;
+    font-family: pMedium;
+    font-size: 15px;
+}
+.pwCh{
+    display: flex;
+    align-items: center;
+}
+.pwCh input{
+    margin-left: 35px;
+    padding: 5px 10px 5px 10px;
+    background-color: white;
+    border: solid 1px #bebebe;
+    border-radius: 3px;
+    font-family: pMedium;
+    font-size: 13px;
+    text-align: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+.pwCh input:hover{
+    background-color: #dddddd;
+    border: 1px solid #bebebe;
+}
+.ex2{
+    display: block;
+}
+.ex2 ul:last-child{
+    margin-top: 13px;
+}
+.ex3{
+    display: block;
+}
+.postThumb{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    padding: 8px 8px;
+    border: solid 1px black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    transition: all .3s;
+    overflow: hidden;
+}
+.postThumb:hover{
+    background-color: #bebebe41;
+}
+.postThumbInner{
+    overflow: hidden;
+    font-family: pLight;
+    font-size: 15px;
+    line-height: 130%;
+}

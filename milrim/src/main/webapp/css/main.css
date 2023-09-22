@@ -1,0 +1,49 @@
+section.banner .bn { height: 80vh; margin: 80px 0 50px 0; }
+
+/* ------------------ banner --------------------- */
+.bContent { width: 100%; height: 100%; display: flex; align-items: center; background-repeat: no-repeat; }
+.bContent01 {  background: url(../source/banner01.jpg) center center; background-size: cover; }
+.bContent02 { background: url(../source/banner02.jpg) center center; background-size: cover; }
+.bContent03 { background: url(../source/banner03.jpg) center center; background-size: cover; }
+.bContent04 { background: url(../source/banner04.jpg) center center; background-size: cover; }
+.bContent05 { background: url(../source/banner05.jpg) center center; background-size: cover; }
+
+
+/* ------------------ search --------------------- */
+section.inner { width: calc(100vw * 1500 / 1920 ); margin: 0 auto; }
+
+.textSch { margin: 0 auto; padding: 10px; display: flex; align-items: center; height: 50px; width: calc(100vw * 1450 / 1920 ); border-bottom: 1px solid #999; }
+.textSch input { background: #fffcd6; padding: 0 15px; width: 100%; background: transparent; font-family: pMedium; font-size: 18px;}
+.textSch:focus-within { border-color:transparent; background: #ffd76b3f; }
+.textSch button { margin-right: 30px; width: 30px; height: 30px; background: url(../source/searchIco.png) center center no-repeat; background-size: cover; cursor: pointer;}
+
+.tagSch { margin-top: 20px; display: flex; flex-wrap: wrap; }
+input[name="tag"] + label { padding: 7px 15px; margin: 10px 5px 0 0; border-radius: 20px; border: 1.5px solid #333; font-size: 17px; font-family: pLight; cursor: pointer; transition: all .2s;}
+
+input[name="tag"] {
+    display: none;
+}
+
+input[name="tag"]:checked+label {
+    color: #897200;
+    background: #fefab4;
+    border-color: #bea214;
+}
+
+/* ----------------- day list --------------------- */
+.dayListAll { margin: 50px 0; display: flex; justify-content: space-between; align-items: flex-start; }
+.dayListAll .dayList { width: calc(100vw * 170 / 1920); padding: 10px 15px; border: 1px solid #ddd; border-radius: 10px; }
+.dayListAll .dayList h4 { padding: 5px 10px; font-family: pBold; font-size: 17px; text-align: center;}
+.dayListAll .dayList ul li { margin: 10px 0; display: flex; flex-direction: column; }
+.dayListAll .dayList ul li span {  display: inline-block; width: calc(100vw * 170 / 1920); margin-bottom: 10px; margin-left: 5px; font-size: 15px; }
+
+.dayListAll .dayList a { margin-bottom: 10px; display: flex; align-items: center; justify-content: center; width: calc(100vw * 170 / 1920); height: calc(100vw * 110 / 1920); border-radius: 6px;  overflow: hidden; }
+.dayListAll .dayList .thumbnail { height: 100%; transition: all .3s;}
+.dayListAll .dayList a:hover .thumbnail { height: 110%; }
+
+.bContent img { margin-left: 180px; width: 600px; }
+.bContent05 img { margin-left: 280px;}
+
+.navRight { display: flex; align-items: center;}
+.navRight .abminBtn { margin-right: 20px; width: 60px; height: 32px; background: #eee; border-radius: 7px; font-family: pMedium; font-size: 14px; transition: all .2s; cursor: pointer;}
+.navRight .abminBtn:hover { background: #ddd; }

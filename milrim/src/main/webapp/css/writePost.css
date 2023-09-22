@@ -1,0 +1,16 @@
+body { 
+    background: #f7f7f7;
+    /* background: url(../source/wpBg.png) center center no-repeat;  */
+    background-size: cover; 
+}
+section.inner { height: 95vh; padding: 0 10%; margin-top: 120px; } 
+section h3 { width: 1100px; margin: 0 auto; padding: 20px 30px; font-family: pSemi; font-size: 23px;} 
+
+form[name="writePost"] { height: 80vh; display: flex; justify-content: center; align-items: center; flex-direction: column; } 
+
+form[name="writePost"] input { width: 1100px; padding: 20px 30px; margin-bottom: 20px; border: 2px solid transparent; background: #fff; box-shadow: 0 0 10px #c8c8c87b; border-radius: 20px; font-size: 22px; font-family: pMedium; transition: all .2s; } 
+form[name="writePost"] input:focus { border: 2px solid #f6c02d; background: #fff; box-shadow: 0 0 0 transparent; } 
+form[name="writePost"] textarea { padding: 25px 30px; width: 1100px; height: 500px; border: 2px solid transparent; background: #fff; box-shadow: 0 0 10px #c8c8c87b; border-radius: 20px; font-size: 18px; font-family: pRegular; line-height: 130%; resize: none; } 
+form[name="writePost"] textarea:focus { border: 2px solid #f6c02d; background: #fff; box-shadow: 0 0 0 transparent; } 
+
+form[name="writePost"] button { width: 100px; margin: 20px; padding: 10px 0; border-radius: 20px; background: #222; color: #fff; font-size: 15px; font-family: pMedium; letter-spacing: 2px; transition: all .3s; cursor: pointer; } 

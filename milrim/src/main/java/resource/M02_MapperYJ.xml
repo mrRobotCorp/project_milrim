@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+	PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd" >	
+		
+<mapper namespace="milrim_project.YJ.dao.A02_MainDao">
+	<select id="schVideos" resultType="videopost">
+	    SELECT  z.*
+	    FROM (
+	        SELECT DISTINCT 
+	            v.videoId,
+	            v.Title, 
+	            v.Image, 
+	            v.UploadDate,
+	            TO_CHAR(v.UploadDate, 'DY', 'NLS_DATE_LANGUAGE=AMERICAN') AS DayOfWeek
+	        FROM VideoPost v
+	        LEFT JOIN TAG t ON v.VideoID = t.VideoID
+	        WHERE 
+	            v.Title LIKE '%' || #{title} || '%'
+	            AND t.tagname LIKE '%' || #{tagName} || '%'
+	            AND v.value IS NULL
+	    ) z
+	    ORDER BY UploadDate DESC
+	</select>
+    <select id="videoDetail" resultType="videopost">
+		SELECT *
+		FROM VIDEOPOST v
+		WHERE VALUE = (
+			SELECT PARENTNUMBER
+			FROM VIDEOPOST v
+			WHERE VIDEOID = #{videoId}
+		)
+		AND v.value IS NOT NULL
+		ORDER BY UPLOADDATE ASC
+    </select>
+    <select id="tagList" resultType="videopost">
+		SELECT TAGNAME ,v.VIDEOID
+		FROM TAG t , VIDEOPOST v
+		WHERE t.VIDEOID = v.VIDEOID
+		AND v.VIDEOID = #{videoId}
+    </select>
+    <insert id="insBookmark">
+	    INSERT INTO BOOKMARK VALUES(#{id},#{videoId})
+	</insert>
+	
+	<delete id="delBookmark">
+	    DELETE FROM BOOKMARK WHERE id = #{id} and videoid = #{videoId}
+	</delete>
+	
+	<select id="checkBookmark" resultType="int">
+	    SELECT COUNT(*) 
+	    FROM Bookmark 
+	    WHERE ID = #{id} 
+	    AND VideoID = #{videoId}
+	</select>
+</mapper>

@@ -1,0 +1,435 @@
+body{
+    overflow-x: hidden;
+}
+section{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 130px);
+}
+.mem {
+    position: relative;
+    z-index: 0;
+    padding-top: calc(6rem);
+    padding-bottom: calc(6rem);
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    align-items: center;
+}
+.memvideo {
+    position: absolute;
+    object-fit: initial;
+    width: 1800px;
+    opacity: 0.3;
+    border-radius: 1.5rem;
+    z-index: -10;
+}
+
+.memshipWrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.memshipInner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+.memshipInner h1{
+    font-size: 50px;
+    font-family: pSemi;
+    text-align: center;
+    line-height: 150%;
+    color: white;
+}
+.memshipInner input{
+    margin-top: 50px;
+    width: 220px;
+    height: 50px;
+    font-family: pBold;
+    font-size: 20px;
+    background-color: #ffeab1;
+    color: rgb(48, 48, 48);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s;
+}
+.memshipInner input:hover{
+    background-color: var(--color-sub);
+    color: black;
+}
+.payModal{
+    position: fixed;
+    top: 18%;
+    display: none;
+}
+.payWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 490px;
+    height: 700px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border-radius: 3px;
+    overflow: hidden auto;
+}
+.payInner{
+    width: 440px;
+    margin: 24px 0px 24px 0px;
+}
+.payInner h1{
+    font-family: pBold;
+    font-size: 26px;
+}
+.payInner p{
+    padding-top: 20px;
+    font-family: pMedium;
+    font-size: 16px;
+}
+.cencel{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cencel button{
+    width: 18px;
+    height: 18px;
+    background: url(../source/mem_cencel.png) center center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.payInfo{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 15px 15px 45px 15px;
+    border: solid 1px white; 
+    border-radius: 3px;
+}
+.payInfo h2{
+    font-family: pBold;
+    font-size: 22px;
+}
+.payInfo p{
+    font-family: pLight;
+    font-size: 15px;
+    line-height: 150%;
+}
+.payTot{
+    display: flex;
+    justify-content: space-between;
+}
+.payTot h3{
+    font-size: 16px;
+}
+.payTot h2{
+    font-family: pBold;
+    font-size: 20px;
+}
+.pLine{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 440px;
+    height: 10px;
+    background-color: rgb(34, 34, 34);
+}
+.payRadioBtn{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.payRadioBtn span{
+    margin-top: 3px;
+    margin-left: 5px;
+}
+.payRadioBtn input[type="radio"] {
+    appearance: none;
+    border: max(2px, 0.1em) solid gray;
+    border-radius: 50%;
+    width: 1.25em;
+    height: 1.25em;
+    transition: border 0.2s ease-in-out;
+}
+.payRadioBtn input[type="radio"]:checked{
+    border: 0.4em solid var(--color-sub);
+}
+.payRadioBtn input[type="radio"]:focus-visible{
+    outline: max(2px, 0.1em) dotted var(--color-sub);
+    outline-offset: max(2px, 0.1em);
+}
+.coment p{
+    font-family: pLight;
+    font-size: 12px;
+    color: #ababab;
+    line-height : 150%;
+}
+.payFor{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.otherPay{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: none;
+}
+.otherPay input[type=radio]{
+    display: none;
+}
+.otherPay input[type=radio]+label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    height: 70px;
+    width: 120px;
+    border: solid 2px white;
+    border-radius: 3px;
+    line-height: 24px;
+    text-align: center;
+    font-size:13px;
+}
+.otherPay input[type=radio]+label img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.otherPay input[type=radio]+label{
+    color: white;
+}
+.otherPay input[type=radio]:checked+label{
+    border: solid 2px var(--color-sub);
+}
+.otherPay div label{
+    margin-top: 10px;
+}
+.easyInner{
+    margin: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+.easyPay{
+    width: 224px;
+    height: 149px;
+    border: solid 1px white;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    display: none;
+}
+.easyPay button{
+    margin-bottom: 10px;
+    width: 18px;
+    height: 18px;
+    background: url(../source/easyPay_btn.png) center center no-repeat;
+    background-size: contain;
+}
+/* 간편 결제 모달 */
+.cardReg{
+    position: fixed;
+    top: 18%;
+    display: none;
+}
+.cardWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 490px;
+    height: 530px;
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border-radius: 3px;
+    overflow: hidden auto;
+}
+.cardTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cardTop button:last-child{
+    width: 18px;
+    height: 18px;
+    background: url(../source/mem_cencel.png) center center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.cardTop button:first-child{
+    width: 18px;
+    height: 18px;
+    background: url(../source/next.png) center center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+.card h3{
+    margin-top: 30px;
+    font-family: pSemi;
+    font-size: 20px;
+}
+.easyPay.active {
+    background: url(../source/card.png) center center;
+    background-size: cover;
+
+}
+
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+}
+.cardInput{
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    gap: 10px;
+}
+.cardInput input{
+    text-align: center;
+    width: 100%;
+    font-weight: 500;
+    font-size: 16px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    color: gray;
+    background: transparent;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 8px 0px;
+    outline: none;
+    border-bottom: 1px solid gray;
+}
+.cardInput input:focus{
+    border-bottom: 1px solid var(--color-sub);
+    color: white;
+}
+.flDsCt {
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    width: 10px;
+    height: 1px;
+    background-color: white;
+}
+.cardDeepInfo{
+    display: flex;
+    /* -webkit-box-pack: justify; */
+    justify-content: space-between;
+    /* -webkit-box-align: center; */
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+}
+.cardDeepInfo input{
+    width: 210px;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid gray;
+    color: gray;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 8px 0px;
+    outline: none;
+    background-color: transparent;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+}
+.cardDeepInfo input:focus{
+    border-bottom: 1px solid var(--color-sub);
+    color: white;
+}
+.cardPwd{
+    margin-top: 20px;
+}
+.cardPwd input{
+    width: 100%;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid gray;
+    color: gray;
+    margin: 0px;
+    margin-top: 10px;
+    padding: 8px 0px;
+    outline: none;
+    background-color: transparent;
+
+}
+.cardPwd input:focus{
+    border-bottom: 1px solid var(--color-sub);
+    color: white;
+}
+.cardAgree{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.cardJoin{
+    margin-top: 20px;
+}
+
+button {
+    outline: none;
+    background: none;
+    border: 0px;
+    cursor: pointer;
+}
+.BbRMj {
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.08s ease-in 0s;
+    height: 3rem;
+    font-size: 18px;
+    font-family: pSemi;
+}
+.subm{
+    width: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.08s ease-in 0s;
+    height: 3rem;
+    font-size: 18px;
+    font-family: pSemi;
+    background-color: var(--color-sub);
+}
+.last{
+    margin-top: 20px;
+}

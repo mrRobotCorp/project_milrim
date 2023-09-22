@@ -1,0 +1,26 @@
+@import './reset.css';
+
+header { position: fixed; top: 0; z-index: 100; width: 100%; background: #fff; box-shadow: 0 2px 11px #a9a9a95c; } 
+header nav { height: 80px; display: flex; justify-content: space-between; align-items: center; padding: 0 6%; font-size: 15px;  } 
+
+nav .gnb { display: flex; align-items: center; font-family: pSemi; }
+nav .headLogo { width: 130px; margin-right: 20px; }
+
+nav .mypageAll .myProfile { height: 50px; display: flex; align-items: center; cursor: pointer;}
+nav .profImg { width: 30px; margin-right: 10px; border-radius: 50%;}
+
+nav .mypageAll .mpList { display: none; position: absolute; top: 80%; right: 4.5%; padding: 5px 22px; color: #fff; background: var(--color-main); border-radius: 7px; box-shadow: 0 0 10px rgba(83, 83, 83, 0.29); font-family: pRegular; }
+nav .mypageAll .mpList.active { display: block; }
+.mpList .profImg { width: 35px; border: 2px solid var(--color-sub);}
+nav .mypageAll .mpList li { margin: 17px 0; font-size: 14px; }
+nav .mypageAll .mpList li:first-child { display: flex; align-items: center; padding-bottom: 12px; border-bottom: 1px solid #fff; }
+nav .mypageAll .mpList a { color: #fff; }
+
+nav .adminAll { display: none; align-items: center; font-family: pSemi; font-size: 15px; }
+
+/* --------------------- footer --------------------------- */
+footer { display:flex; align-items: center; justify-content: center; flex-direction: column; padding: 20px 0; height: 90px; font-size: 13px; font-family: pLight; background: #072c4d;}
+footer img { width: 120px;}
+footer p { margin-top: 10px; color: #ffffff7d;}
+
+
